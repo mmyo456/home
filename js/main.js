@@ -1,7 +1,6 @@
 /*!
-    流星小屋原创首发
-    流星小屋地址 : www.liuxingyu.icu
-    百度搜索 : 流星小屋
+    鸭鸭のHome
+    Github: https://github.com/mmyo456/home
   */
 
 //弹窗样式
@@ -60,7 +59,7 @@ window.addEventListener('load', function () {
             timeout: 2500,
             icon: false,
             title: hello,
-            message: '欢迎来到我的主页'
+            message: '欢迎来到鸭鸭的Home！'
         });
     }, 800);
 
@@ -155,9 +154,9 @@ $('#hitokoto').click(function () {
 //获取天气
 //请前往 https://www.mxnzp.com/doc/list 申请 app_id 和 app_secret
 //请前往 https://dev.qweather.com/ 申请 key
-const add_id = "wrknltonr0foslhs"; // app_id
-const app_secret = "Nlh1c0F6d0ZDU2pDR0J3YVBVbkhudz09"; // app_secret
-const key = "433f0c48615a48dfaf2f2b2444297e79" // key
+const add_id = "pkfgeikuhwohlgoo"; // app_id
+const app_secret = "YVh5NVdhaTVQenUxcnA0b1pEVmRFdz09"; // app_secret
+const key = "7e10a93b3c1d410eb097c3e5fe0fda31" // key
 function getWeather() {
     fetch("https://www.mxnzp.com/api/ip/self?app_id=" + add_id + "&app_secret=" + app_secret)
         .then(response => response.json())
@@ -317,7 +316,7 @@ $('#switchmore').on('click', function () {
     } else {
         $('#container').attr('class', 'container');
         $("#change").html("Hello&nbsp;World&nbsp;!");
-        $("#change1").html("一个建立于 21 世纪的小站，存活于互联网的边缘");
+        $("#change1").html("因为心血来潮搭建的小破站，正在努力的活着");
     }
 });
 
@@ -418,21 +417,25 @@ color: rgb(244,167,89);
 var styleContent = `
 color: rgb(30,152,255);
 `
-var title1 = '無名の主页'
+var title1 = '鸭鸭のHome'
 var title2 = `
- _____ __  __  _______     ____     __
-|_   _|  \\/  |/ ____\\ \\   / /\\ \\   / /
-  | | | \\  / | (___  \\ \\_/ /  \\ \\_/ / 
-  | | | |\\/| |\\___ \\  \\   /    \\   /  
- _| |_| |  | |____) |  | |      | |   
-|_____|_|  |_|_____/   |_|      |_|                                                     
+       　  　▃▆█▇▄▖
+　 　 　 ▟◤▖　　　◥█▎
+   　 ◢◤　 ▐　　　 　▐▉
+　 ▗◤　　　▂　▗▖　　▕█▎
+　◤　▗▅▖◥▄　▀◣　　█▊
+▐　▕▎◥▖◣◤　　　　◢██
+█◣　◥▅█▀　　　　▐██◤
+▐█▙▂　　     　◢██◤
+◥██◣　　　　◢▄◤
+ 　　▀██▅▇▀
+哲学♂♂ 114514
 `
 var content = `
-版 本 号：3.3
-更新日期：2022-07-06
+更新日期：2023-02-17
 
-主页:  https://www.imsyy.top
-Github:  https://github.com/imsyy/home
+    鸭鸭のHome
+    Github: https://github.com/mmyo456/home
 `
 console.log(`%c${title1} %c${title2}
 %c${content}`, styleTitle1, styleTitle2, styleContent)

@@ -1,7 +1,6 @@
 /*!
-    流星小屋原创首发
-    流星小屋地址 : www.liuxingyu.icu
-    百度搜索 : 流星小屋
+    鸭鸭のHome
+    Github: https://github.com/mmyo456/home
   */
 
 @charset "utf-8";
@@ -967,24 +966,6 @@ footer {
     -ms-animation: fade 0.75s;
 }
 
-/*播放音乐时底栏歌词*/
-#lrc {
-    display: none;
-    line-height: 46px;
-    color: #eeeeee;
-    animation: fade;
-    -webkit-animation: fade 0.75s;
-    -moz-animation: fade 0.75s;
-    -o-animation: fade 0.75s;
-    -ms-animation: fade 0.75s;
-}
-
-.lrc-show {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 /*弹窗样式*/
 .iziToast {
     backdrop-filter: blur(10px) !important;
@@ -1036,27 +1017,4 @@ footer {
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
     background-color: #eeeeee;
-}
-
-body {
-  background: url("img/bj.png") no-repeat center center / cover fixed;
-}
-
-/* 在屏幕宽度小于 768px 时使用另一张背景图片 */
-@media (max-width: 768px) {
-  body {
-    background: url("img/bj-mobile.png") no-repeat center center / cover fixed;
-  }
-}
-
-/* 兼容浏览器版本 */
-body {
-  -webkit-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-/* 其他 CSS 代码 */
-.test {
-  margin-top: 100px;
 }
