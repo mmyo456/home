@@ -56,24 +56,21 @@ window.addEventListener('load', function () {
     //用户欢迎
     setTimeout(function () {
         iziToast.show({
-            timeout: 2500,
+            timeout: 5000,
             icon: false,
+            title: '欢迎',
             title: hello,
             message: '欢迎来到鸭鸭的Home！'
         });
     }, 800);
 
-    //延迟加载音乐播放器
-    var element = document.createElement("script");
-    element.src = "./js/music.js";
-    document.body.appendChild(element);
 
     //中文字体缓加载-此处写入字体源文件
     //先行加载简体中文子集，后续补全字集
     //由于压缩过后的中文字体仍旧过大，可转移至对象存储或 CDN 加载
     const font = new FontFace(
         "MiSans",
-        "url(" + "./font/MiSans-Regular.woff2" + ")"
+        "url(" + "./fonts/MiSans-Regular.subset.woff2" + ")"
     );
     document.fonts.add(font);
 
@@ -144,9 +141,9 @@ $('#hitokoto').click(function () {
             .catch(console.error)
     } else {
         iziToast.show({
-            timeout: 1000,
+            timeout: 3000,
             icon: "fa-solid fa-circle-exclamation",
-            message: '你点太快了吧'
+            message: '你点那么快干什么鸭！'
         });
     }
 });
@@ -200,16 +197,16 @@ $('#upWeather').click(function () {
         });
     } else {
         iziToast.show({
-            timeout: 1000,
+            timeout: 3000,
             icon: "fa-solid fa-circle-exclamation",
-            message: '请稍后再更新哦'
+            message: '这么着急刷新天气干什么鸭！'
         });
     }
 });
 
 //获取时间
 var t = null;
-t = setTimeout(time, 1000);
+t = setTimeout(time, 0000);
 
 function time() {
     clearTimeout(t);
@@ -419,21 +416,22 @@ color: rgb(30,152,255);
 `
 var title1 = '鸭鸭のHome'
 var title2 = `
-       　  　▃▆█▇▄▖
-　 　 　 ▟◤▖　　　◥█▎
-   　 ◢◤　 ▐　　　 　▐▉
-　 ▗◤　　　▂　▗▖　　▕█▎
-　◤　▗▅▖◥▄　▀◣　　█▊
-▐　▕▎◥▖◣◤　　　　◢██
-█◣　◥▅█▀　　　　▐██◤
-▐█▙▂　　     　◢██◤
-◥██◣　　　　◢▄◤
- 　　▀██▅▇▀
-哲学♂♂ 114514
+⣿⣿⣿⠟⠛⠛⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⢋⣩⣉⢻
+⣿⣿⣿⠀⣿⣶⣕⣈⠹⠿⠿⠿⠿⠟⠛⣛⢋⣰⠣⣿⣿⠀⣿
+⣿⣿⣿⡀⣿⣿⣿⣧⢻⣿⣶⣷⣿⣿⣿⣿⣿⣿⠿⠶⡝⠀⣿
+⣿⣿⣿⣷⠘⣿⣿⣿⢏⣿⣿⣋⣀⣈⣻⣿⣿⣷⣤⣤⣿⡐⢿
+⣿⣿⣿⣿⣆⢩⣝⣫⣾⣿⣿⣿⣿⡟⠿⠿⠦⠀⠸⠿⣻⣿⡄⢻
+⣿⣿⣿⣿⣿⡄⢻⣿⣿⣿⣿⣿⣿⣿⣿⣶⣶⣾⣿⣿⣿⣿⠇⣼
+⣿⣿⣿⣿⣿⣿⡄⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⣰
+⣿⣿⣿⣿⣿⣿⠇⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢀⣿
+⣿⣿⣿⣿⣿⠏⢰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢸⣿
+⣿⣿⣿⣿⠟⣰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⣿
+⣿⣿⣿⠋⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡄⣿
+⣿⣿⠋⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⢸
 `
 var content = `
-更新日期：2023-02-17
-
+更新日期：2023-02-21
+V1.50
     鸭鸭のHome
     Github: https://github.com/mmyo456/home
 `
