@@ -300,9 +300,9 @@ body {
 .button {
     width: 26px;
     height: 26px;
-    padding: 25px;
+    padding: 27px;
     background-color: #fff;
-    border-radius: 6px;
+    border-radius: 10px;
     cursor: pointer;
 }
 
