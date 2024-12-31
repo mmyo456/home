@@ -27,6 +27,14 @@
             {{ siteIcp }}
           </a>
         </span>
+        <!-- 公安备案 -->
+        <span>
+          &amp;
+          <img src="/beian.png" class="net" />
+          <a v-if="siteIcpa" href="https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33030202002197" target="_blank">
+            {{ siteIcpa }}
+          </a>
+        </span>
       </div>
       <div v-else class="lrc">
         <Transition name="fade" mode="out-in">
