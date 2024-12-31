@@ -30,7 +30,7 @@
         <!-- 公安备案 -->
         <span>
           &amp;
-          <img src="/beian.png" class="net" />
+          <img src="/images/icon/beian.png" class="net" />
           <a v-if="siteIcpa" href="https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33030202002197" target="_blank">
             {{ siteIcpa }}
           </a>
